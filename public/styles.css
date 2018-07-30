@@ -1,0 +1,554 @@
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: pink;
+    margin: 0;
+}
+
+#hero {
+    transform: rotate(-25deg);
+    margin-left: 50px;
+}
+
+#hero h1 {
+    font-size: 142px;
+    margin-bottom: 0px;
+    color: aquamarine;
+    font-family: "Pacifico", serif;
+}
+
+/* .logo-anim h1 {
+    animation-name: pulsate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+} */
+
+#hero h2 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Pacifico";
+    color: grey;
+}
+
+/* @-webkit-keyframes pulsate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
+#welcome {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#register-login {
+    width: 40%;
+}
+
+#register h1,
+#login h1 {
+    font-family: "Pacifico", serif;
+    color: grey;
+}
+
+#register,
+#login {
+    margin: 0 auto;
+    width: 200px;
+}
+
+#register input,
+#login input {
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    display: block;
+    font-size: 16px;
+    margin: 10px;
+    font-style: italic;
+}
+
+#register button,
+#login button {
+    width: 200px;
+    margin: 10px;
+}
+
+#register a,
+#login a {
+    font-size: 12px;
+}
+
+button {
+    height: 30px;
+    width: 75px;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}
+
+#slogan {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    color: grey;
+}
+
+.logo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#nav {
+    border-bottom: 1px solid grey;
+}
+
+#logo-container {
+    height: 50px;
+    width: 50px;
+    float: right;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#logo-container a {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.greeting {
+    padding: 10px;
+    display: inline;
+}
+
+.nav-links {
+    display: inline;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    bottom: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.search input {
+    display: inline-block;
+    height: 20px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.search-results {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    width: 160px;
+    background-color: white;
+}
+
+.user-result {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.user-result img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.user-result span,
+.user-result a {
+    background-color: white;
+    text-decoration: none;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline;
+    padding: 10px;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#upload-profilepic-modal {
+    background: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    margin: 150px auto 0 auto;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+#upload-profilepic-modal p,
+#upload-profilepic-modal span {
+    text-align: center;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile-container {
+    width: 90%;
+    margin: 30px auto 30px auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.profile-page h2 {
+    margin-left: 20px;
+}
+
+.profilepic-container {
+    float: left;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+.profilepic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.bio-container {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    min-height: 150px;
+}
+
+.bio-container p {
+    display: inline;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.edit-bio-icon {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    position: relative;
+    top: 8px;
+}
+
+.edit-bio {
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
+.edit-bio textarea {
+    width: 200px;
+    height: 50px;
+    background: white;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.edit-bio button {
+    position: relative;
+    margin: 10px;
+}
+
+.make-book-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.make-book {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.make-book textarea {
+    width: 60%;
+    height: 75px;
+    border-radius: 20px;
+    background: white;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.answer textarea {
+    font-family: "Short Stack", sans-serif;
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    background: white;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.answer-p {
+    width: 60%;
+    border-radius: 20px;
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: "Short Stack", sans-serif;
+}
+
+.your-book {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+.questions-list {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+}
+
+.question {
+    padding: 20px 0px 20px 50px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background: pink;
+}
+
+.question li {
+    padding: 10px;
+}
+
+.opp-name {
+    display: inline;
+}
+
+.friendbutton-container {
+    display: inline-block;
+}
+
+.friendbutton-container button {
+    width: 150px;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.uploadbutton-container {
+    display: block;
+}
+
+.uploadbutton-container button {
+    width: 150px;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+
+label {
+    position: relative;
+    margin: 10px auto;
+    display: block;
+    height: 30px;
+    width: 150px;
+    background-color: aquamarine;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#users {
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.empty-friends-list {
+    font-style: italic;
+}
+
+.pending {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.friends {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-friends {
+    display: flex;
+    overflow: scroll;
+}
+
+.profilepic-container-opp {
+    height: 150px;
+    width: 150px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.profilepic-container-opp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.each-pending,
+.each-friend {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.each-pending p,
+.each-friend p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.book-container {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.book-become-friends {
+    margin-bottom: 10px;
+}
+
+.book-become-friends h4 {
+    display: inline-block;
+}
+
+.online-container {
+    margin-left: 20px;
+}
+
+.users-online {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.online-user {
+    text-align: center;
+}
+
+.online-user img {
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+#chat-container {
+    width: 80%;
+    min-height: 400px;
+    padding: 30px;
+    margin: 20px auto 0 auto;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.chat-message-container {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    margin: 10px;
+    background-color: pink;
+}
+
+#chat-container textarea {
+    width: 94%;
+    height: 100px;
+    border-radius: 20px;
+    background: white;
+    font-size: 16px;
+    margin: 10px;
+    padding: 20px;
+}
+
+#chat-container button {
+    margin: 15px;
+}
+
+.chat-date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.chatAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
